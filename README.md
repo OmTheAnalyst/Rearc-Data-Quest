@@ -79,7 +79,7 @@ S3 Output:
 
 ------------------------------------------------------------
 Modular Design and Reusability for Long-Term Maintenance:
-
+-------------
 
 - To improve maintainability and scalability, reusable utilities and schema wrappers can be added across several parts of this project. These include wrappers for S3 operations (uploading, downloading, checking existence), API calls with consistent header and retry logic, and data schema validation to enforce expected structure for incoming files and API responses. Additionally, reusable functions for logging, file comparison, and data transformation steps such as cleaning column names, filtering rows, and handling missing values can modularize the pipeline further. If this project were to scale or be used in production, such abstractions would make debugging easier, promote code reuse, and enable better unit testing across ingestion, processing, and analytics layers.
 
